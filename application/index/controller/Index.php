@@ -4,7 +4,7 @@
  * @Author: wangjian
  * @Date:   2019-05-06 16:35:08
  * @Last Modified by:   wangjian
- * @Last Modified time: 2019-05-07 09:21:57
+ * @Last Modified time: 2019-05-09 17:24:48
  */
 namespace app\index\controller;
 
@@ -49,7 +49,7 @@ class Index extends Controller
 		// 推送的url地址，使用自己的服务器地址
         $push_api_url = "http://127.0.0.1:2121/";
         $post_data    = array(
-            "type"    => "publish",
+            "type"    => "pushPhone",
             "content" => $content,
             "to"      => $to_uid,
         );
